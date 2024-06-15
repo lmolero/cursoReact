@@ -23,13 +23,10 @@ a:hover {
 
 body {
   margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
   font-family: Inter, sans-serif;
+  height: 100vh;
+  background-color: #282D35;
 }
-
 h1 {
   font-size: 3.2em;
   line-height: 1.1;
@@ -56,7 +53,7 @@ button:focus-visible {
 
 @media (prefers-color-scheme: light) {
   :root {
-    color: #213547;
+    color: #0f6dbe;
     background-color: #ffffff;
   }
   a:hover {
@@ -72,28 +69,11 @@ nav {
   align-items: center;
   background-color: #21222A;
   height: 90px;
-  padding: 30px 500px;
+  padding: 30px 25px;
 }
 
 .nav--logo_text, .nav--title {
   margin: 0;
-}
-
-nav > h4 {
-  color: #DEEBF8;
-    font-weight: 600;
-}
-
-nav > h3 {
-  margin-right: auto;
-  color: #61DAFB;
-  font-weight: 500;
-  font-size: 22px;
-}
-
-nav > img {
-  height: 30px;
-  margin-right: 7px;
 }
 
 .nav--logo_text {
@@ -101,4 +81,76 @@ nav > img {
   color: #61DAFB;
   font-weight: 700;
   font-size: 22px;
+}
+
+.nav--title {
+  color: #DEEBF8;
+  font-weight: 2000;
+}
+
+.nav--icon {
+  height: 100px;
+  margin-right: 7px;
+}
+
+nav > h4 {
+  color: #61DAFB;
+  font-weight: 500;
+  font-size: 22px;
+}
+
+nav > h3 {
+  margin-right: auto;
+  color: #61DAFB;
+  font-weight: 800;
+  font-size: 40px;
+}
+
+.nav--logo_text {
+  margin-right: auto;
+  color: #61DAFB;
+  font-weight: 700;
+  font-size: 32px;
+}
+.nav--title {
+  color: #DEEBF8;
+  font-weight: 600;
+}
+
+.nav--icon {
+  height: 50px;
+  margin-right: 7px;
+}
+
+main {
+  background-color: #353741;
+  padding: 30px 500px;
+  background-image: url('./assets/React-icon.png');
+  background-repeat: no-repeat;
+  background-size: 300px 250px;
+  background-position: right 50%;
+  margin-right: -10%;
+
+}
+
+.main--title {
+  margin: 0;
+  font-size: 39px;
+  letter-spacing: -0.05em;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 39.06px;
+  color:rgba(255, 255, 255, 0.87);
+
+}
+
+.main--facts {
+  margin-top: 46px;
+  color:rgba(255, 255, 255, 0.87);
+}
+
+.main--facts > li::marker {
+  font-size: 1.4rem;
+  color: #61DAFB;
 }
